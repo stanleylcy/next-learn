@@ -23,8 +23,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Theme
-            accentColor="mint"
-            grayColor="gray"
+            accentColor="crimson"
+            grayColor="sand"
             panelBackground="solid"
             scaling="100%"
             radius="medium"

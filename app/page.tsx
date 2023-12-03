@@ -1,39 +1,45 @@
-"use client"
-
 import React from "react"
 import {
-  Box,
   Card,
   Container,
   Flex,
   Inset,
-  Select,
   Strong,
   Table,
   Text,
 } from "@radix-ui/themes"
 
+import {
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectRoot,
+  SelectSeparator,
+  SelectTrigger,
+} from "@/components/radix-ui/themes"
+
 const SampleSelect = () => {
   return (
-    <Select.Root defaultValue="apple">
-      <Select.Trigger />
-      <Select.Content>
-        <Select.Group>
-          <Select.Label>Fruits</Select.Label>
-          <Select.Item value="orange">Orange</Select.Item>
-          <Select.Item value="apple">Apple</Select.Item>
-          <Select.Item value="grape" disabled>
+    <SelectRoot defaultValue="apple">
+      <SelectTrigger />
+      <SelectContent>
+        <SelectGroup>
+          <SelectLabel>Fruits</SelectLabel>
+          <SelectItem value="orange">Orange</SelectItem>
+          <SelectItem value="apple">Apple</SelectItem>
+          <SelectItem value="grape" disabled>
             Grape
-          </Select.Item>
-        </Select.Group>
-        <Select.Separator />
-        <Select.Group>
-          <Select.Label>Vegetables</Select.Label>
-          <Select.Item value="carrot">Carrot</Select.Item>
-          <Select.Item value="potato">Potato</Select.Item>
-        </Select.Group>
-      </Select.Content>
-    </Select.Root>
+          </SelectItem>
+        </SelectGroup>
+        <SelectSeparator />
+        <SelectGroup>
+          <SelectLabel>Vegetables</SelectLabel>
+          <SelectItem value="carrot">Carrot</SelectItem>
+          <SelectItem value="potato">Potato</SelectItem>
+        </SelectGroup>
+      </SelectContent>
+    </SelectRoot>
   )
 }
 
